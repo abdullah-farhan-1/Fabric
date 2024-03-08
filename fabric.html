@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abyss Fabric Web | Horn Mountain | PD/PD4136</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="fabric.css">
+</head>
+
+<body>
+    <div class="navbar fixed-top py-0">
+        <div class="container-fluid pr-0">
+            <div class="navbar_container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-body">
+                        <div class="navbar-nav">
+                            <div class="nav-item">
+                                <div class="home_svg">
+                                    <div class="home_icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5" />
+                                        </svg>
+                                    </div>
+                                    <a class="nav-link home" aria-current="page" href="#">Home</a>
+                                </div>
+                            </div>
+                            <div class="nav-item">
+                                <div class="settings_svg">
+                                    <div class="settings_icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                                        </svg>
+                                    </div>
+                                    <a class="nav-link settings" aria-current="page" href="#">Settings</a>
+                                </div>
+                            </div>
+                            <div class="nav-item">
+                                <div class="log_out_svg">
+                                    <div class="log_out_icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z" />
+                                            <path fill-rule="evenodd"
+                                                d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z" />
+                                        </svg>
+                                    </div>
+                                    <a class="nav-link log_out" aria-current="page" href="#">Logout</a>
+                                </div>
+                            </div>
+                            <div class="information">
+                                <p class="sub_information">Logged in as Abdullah Farhan</p>
+                            </div>
+                            <div class="units_container">
+                                <div class="units">
+                                    <span>UNITS</span>
+                                </div>
+                                <button class="imperial">IMPERIAL</button>
+                                <button class="metric">METRIC</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fabric_main_logo_container">
+                    <div class="fabric_main_logo">
+                        <img class="fabric_image" src="abyss_fabric_logo_white.239a37c7.png" alt="">
+                    </div>
+                </div>
+
+                <div class="fabric_v2_button_container">
+                    <button class="fabric_v2_button">
+                        <div class="fabric_v2_button_content">
+                            <div class="fabric_v2_button_svg">
+                                <svg class="arrow_logo_for_v2" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 11">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg>
+                            </div>
+
+                            <div class="fabric_v2_button_text">Switch To Fabric 2.0</div>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="help_logo_container">
+                    <div class="help_logo">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                                class="bi bi-question-circle-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="tools_main_container">
+        <div class="tools_container">
+            <button class="info_container">
+                <div class="info_logo_container">
+                    <div class="info_svg"><svg class="info_logo" xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                            <path
+                                d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="info_text">INFO</div>
+            </button>
+
+            <button class="layers_container">
+                <div class="layers_logo_container">
+                    <div class="layers_svg"><svg class="layers_logo" xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-stack" viewBox="0 0 16 16">
+                            <path
+                                d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.6.6 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.6.6 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.6.6 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535z" />
+                            <path
+                                d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.6.6 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="layers_text">LAYERS</div>
+            </button>
+
+            <button class="config_container">
+                <div class="config_logo_container">
+                    <div class="config_svg"><svg class="config_logo" xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-gear-wide-connected" viewBox="0 0 16 16">
+                            <path
+                                d="M7.068.727c.243-.97 1.62-.97 1.864 0l.071.286a.96.96 0 0 0 1.622.434l.205-.211c.695-.719 1.888-.03 1.613.931l-.08.284a.96.96 0 0 0 1.187 1.187l.283-.081c.96-.275 1.65.918.931 1.613l-.211.205a.96.96 0 0 0 .434 1.622l.286.071c.97.243.97 1.62 0 1.864l-.286.071a.96.96 0 0 0-.434 1.622l.211.205c.719.695.03 1.888-.931 1.613l-.284-.08a.96.96 0 0 0-1.187 1.187l.081.283c.275.96-.918 1.65-1.613.931l-.205-.211a.96.96 0 0 0-1.622.434l-.071.286c-.243.97-1.62.97-1.864 0l-.071-.286a.96.96 0 0 0-1.622-.434l-.205.211c-.695.719-1.888.03-1.613-.931l.08-.284a.96.96 0 0 0-1.186-1.187l-.284.081c-.96.275-1.65-.918-.931-1.613l.211-.205a.96.96 0 0 0-.434-1.622l-.286-.071c-.97-.243-.97-1.62 0-1.864l.286-.071a.96.96 0 0 0 .434-1.622l-.211-.205c-.719-.695-.03-1.888.931-1.613l.284.08a.96.96 0 0 0 1.187-1.186l-.081-.284c-.275-.96.918-1.65 1.613-.931l.205.211a.96.96 0 0 0 1.622-.434zM12.973 8.5H8.25l-2.834 3.779A4.998 4.998 0 0 0 12.973 8.5m0-1a4.998 4.998 0 0 0-7.557-3.779l2.834 3.78zM5.048 3.967l-.087.065zm-.431.355A4.98 4.98 0 0 0 3.002 8c0 1.455.622 2.765 1.615 3.678L7.375 8zm.344 7.646.087.065z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="config_text">CONFIG</div>
+            </button>
+        </div>
+    </div>
+
+    <div class="main_body_container">
+        <div class="platform_data_container">
+            <div class="platform_data"> Horn Mountain <span class="slash">/</span> CD/CD3289</div>
+        </div>
+    </div>
+
+    <div class="side_bar_main_container">
+        <div class="equipment_information_container">
+            <div class="equipment_information">
+                Equipment Information
+            </div>
+        </div>
+
+        <div class="image_information_container">
+            <div class="image_name_container">
+                <div class="image_name">Image Name</div>
+            </div>
+            <div class="spherical_number_container">
+                <div class="spherical_number">CD3289</div>
+            </div>
+        </div>
+
+        <div class="equipment_name_container">
+            <div class="equipment_name">Equipment Name</div>
+        </div>
+
+        <div class="asset_name_container">
+            <div class="asset_name">3-HF-2023-AL</div>
+        </div>
+
+        <div class="circuit_name_container">
+            <div class="circuit_name">Circuit Name</div>
+        </div>
+
+        <div class="circuit_number_container">
+            <div class="circuit_number">Circuit HM-009-0010</div>
+        </div>
+
+        <div class="area_details_container">
+            <div class="area_container">
+                <div class="area">Area</div>
+            </div>
+            <div class="area_actual_container">
+                <div class="area_actual">0.00 ft <sup>2</sup></div>
+            </div>
+        </div>
+
+        <div class="equipment_class_container">
+            <div class="equipment_class">
+                <div class="equipment_class_text">Equipment Class</div>
+            </div>
+            <div class="pipe_container">
+                <div class="pipe">Pipe</div>
+            </div>
+        </div>
+
+        <div class="equipment_size_container">
+            <div class="equipment_size">
+                <div class="equipment_size_text">Equipment Class</div>
+            </div>
+            <div class="size_container">
+                <div class="size">3</div>
+            </div>
+        </div>
+
+        <div class="equipment_service_class_container">
+            <div class="equipment_service_class">
+                <div class="equipment_service_class_text">Equipment Service Class</div>
+            </div>
+            <div class="service_value">
+                <div class="value">HF</div>
+            </div>
+        </div>
+
+        <div class="remediated_main_container">
+            <div class="remediated_container">
+                <div class="remediated">Remediated</div>
+            </div>
+            <div class="remediated_value">
+                <div class="r_value">No</div>
+            </div>
+        </div>
+
+        <div class="corrosion_container">
+            <div class="corrosion">Corrosion</div>
+        </div>
+
+        <div class="corrosion_value_container">
+            <div class="light_corrosion_container">
+                <div class="light">Light: </div>
+            </div>
+            <div class="light_corrosion_value">
+                <div class="l_c_value">48.91 ft <sup>2</sup> - (9%)</div>
+            </div>
+        </div>
+
+        <div class="corrosion_value_container">
+            <div class="moderate_corrosion_container">
+                <div class="moderate">Moderate: </div>
+            </div>
+            <div class="moderate_corrosion_value">
+                <div class="m_c_value">44.93 ft <sup>2</sup> - (8%)</div>
+            </div>
+        </div>
+
+        <div class="corrosion_value_container">
+            <div class="heavy_corrosion_container">
+                <div class="heavy">Heavy: </div>
+            </div>
+            <div class="heavy_corrosion_value">
+                <div class="h_c_value">9.85 ft <sup>2</sup> - (2%)</div>
+            </div>
+        </div>
+
+        <div class="corrosion_value_container">
+            <div class="substrate_condition_container">
+                <div class="substrate_condition">Substrate condition: </div>
+            </div>
+            <div class="substrate_condition_value">
+                <div class="s_c_value">Heavy</div>
+            </div>
+        </div>
+
+        <div class="degree_of_rusting_container">
+            <div class="degree_of_rusting">Degree of Rusting</div>
+        </div>
+
+        <div class="degree_of_rusting_value_container">
+            <div class="r_i_0_container">
+                <div class="r_i_0">Ri0: </div>
+            </div>
+            <div class="degree_of_rusting_value">
+                <div class="r_i_0_value">48.20 ft <sup>2</sup> - (9%)</div>
+            </div>
+        </div>
+
+        <div class="degree_of_rusting_value_container">
+            <div class="r_i_1_container">
+                <div class="r_i_1">Ri1: </div>
+            </div>
+            <div class="degree_of_rusting_value">
+                <div class="r_i_1_value">20.99 ft <sup>2</sup> - (4%)</div>
+            </div>
+        </div>
+
+        <div class="degree_of_rusting_value_container">
+            <div class="r_i_2_container">
+                <div class="r_i_2">Ri2: </div>
+            </div>
+            <div class="degree_of_rusting_value">
+                <div class="r_i_2_value">20.92 ft <sup>2</sup> - (4%)</div>
+            </div>
+        </div>
+
+        <div class="degree_of_rusting_value_container">
+            <div class="r_i_3_container">
+                <div class="r_i_3">Ri3: </div>
+            </div>
+            <div class="degree_of_rusting_value">
+                <div class="r_i_3_value">177.45 ft <sup>2</sup> - (33%)</div>
+            </div>
+        </div>
+
+        <div class="degree_of_rusting_value_container">
+            <div class="r_i_4_container">
+                <div class="r_i_4">Ri4: </div>
+            </div>
+            <div class="degree_of_rusting_value">
+                <div class="r_i_4_value">198.03 ft <sup>2</sup> - (37%)</div>
+            </div>
+        </div>
+
+        <div class="degree_of_rusting_value_container">
+            <div class="r_i_5_container">
+                <div class="r_i_5">Ri5: </div>
+            </div>
+            <div class="degree_of_rusting_value">
+                <div class="r_i_5_value">71.83 ft <sup>2</sup> - (13%)</div>
+            </div>
+        </div>
+
+        <div class="consolidated_degree_of_rusting_container">
+            <div class="consolidated_degree_of_rusting">
+                <div class="consolidated_degree_of_rusting_text">Consolidated Degree of Rusting</div>
+            </div>
+            <div class="consolidated_degree_of_rusting_value">
+                <div class="c_d_0_r_value">Ri 4 - (18.2%)</div>
+            </div>
+        </div>
+
+        <div class="assembly_condition_container">
+            <div class="assembly_condition">Assembly Condition</div>
+        </div>
+
+        <div class="button_stacker_main_container">
+
+            <div class="images_tally_button_container">
+                <button class="images_tally_button">
+                    <span class="tally_number">66 IMAGES</span>
+                </button>
+            </div>
+
+            <div class="export_data_button_container">
+                <button class="export_data_button">
+                    <div class="export_data_svg">
+                        <svg class="export_data_logo" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z" />
+                            <path fill-rule="evenodd"
+                                d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z" />
+                        </svg>
+                    </div>
+                    <span class="export_data">EXPORT DATA</span>
+                </button>
+            </div>
+
+            <div class="copy_link_button_container">
+                <button class="copy_link_button">
+                    <div class="copy_link_svg">
+                        <svg class="copy_link_logo" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            fill="currentColor" class="bi bi-copy" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z" />
+                        </svg>
+                    </div>
+                    <span class="copy_link">COPY LINK</span>
+                </button>
+            </div>
+
+            <div class="add_part_button_container">
+                <button class="add_part_button">
+                    <div class="add_part_svg">
+                        <svg class="add_part_logo" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                        </svg>
+                    </div>
+                    <span class="add_part">ADD PART</span>
+                </button>
+            </div>
+
+            <div class="show_in_equipment_table_button_container">
+                <button class="show_in_equipment_table_button">
+                    <div class="show_in_equipment_table_svg">
+                        <svg class="show_in_equipment_table_logo" xmlns="http://www.w3.org/2000/svg" width="20"
+                            height="20" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                            <path fill-rule="evenodd"
+                                d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                        </svg>
+                    </div>
+                    <span class="show_in_equipment_table">SHOW IN EQUIPMENT TABLE</span>
+                </button>
+            </div>
+
+            <div class="show_in_3d_view_button_container">
+                <button class="show_in_3d_view_button">
+                    <div class="show_in_3d_view_svg">
+                        <svg class="show_in_3d_view_logo" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                            <path fill-rule="evenodd"
+                                d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                        </svg>
+                    </div>
+                    <span class="show_in_3d_view">SHOW IN 3D VIEW</span>
+                </button>
+            </div>
+
+            <div class="return_to_dashboard_button_container">
+                <button class="return_to_dashboard_button">
+                    <span class="return_to_dashboard">RETURN TO DASHBOARD</span>
+                </button>
+            </div>
+
+            <div class="review_part_button_container">
+                <button class="review_part_button">
+                    <span class="review_part">REVIEW PART</span>
+                </button>
+            </div>
+
+            <div class="spacing_1"></div>
+            <div class="spacing_2"></div>
+
+        </div>
+    </div>
+
+    <footer class="main_footer_container fixed-bottom">
+        <div class="copyright_logo_container">
+            <div class="copyright_svg">
+                <svg class="copyright_logo" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                    fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16">
+                    <path
+                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="brand_display_container">
+            <div class="brand_display">
+                2024 Abyss Solutions - Occidental Petroleum
+            </div>
+        </div>
+
+        <div class="help_logo_2_container">
+            <div class="help_2_svg">
+                <a href="#"><svg class="help_logo_2" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

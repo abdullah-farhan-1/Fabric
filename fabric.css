@@ -1,0 +1,1052 @@
+body {
+    font-family: Roboto, sans-serif;
+    margin: none;
+}
+
+.container-fluid {
+    height: 64px;
+    background-color: #224063;
+    box-shadow: 0px 3px #112131;
+}
+
+.navbar_container {
+    display: flex;
+    flex-direction: row;
+    width: 1600px;
+}
+
+.navbar-toggler {
+    display: inline-block;
+    border: none;
+    padding-right: 20px;
+    padding-left: 6px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(351deg) brightness(106%) contrast(106%);
+    margin-right: 5px;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    width: 25px;
+    height: 15px;
+}
+
+.offcanvas {
+    background-color: rgb(0, 0, 0) !important;
+    width: 256px !important;
+}
+
+.fabric_main_logo_container {
+    display: inline-flex;
+    padding: 5px;
+}
+
+.fabric_main_logo {
+    height: 23px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(351deg) brightness(106%) contrast(106%);
+
+}
+
+.fabric_image {
+    height: 90%;
+    width: 90%;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(351deg) brightness(106%) contrast(106%);
+}
+
+.fabric_v2_button_container {
+    display: inline-flex;
+    flex-grow: 1;
+    width: 36px;
+    margin-left: 20px;
+}
+
+.fabric_v2_button {
+    background-color: rgb(59, 218, 183);
+    padding: 0px 16px;
+    border: 1px solid rgb(59, 218, 183);
+    border-radius: 4px;
+    transition: background-color 150ms ease-in-out;
+}
+
+.fabric_v2_button:hover {
+    background-color: rgb(63, 203, 173);
+    border-color: rgb(63, 203, 173);
+}
+
+.fabric_v2_button_svg {
+    display: inline-flex;
+}
+
+.arrow_logo_for_v2 {
+    width: 100%;
+    height: 100%;
+}
+
+.fabric_v2_button_text {
+    display: inline-flex;
+    font-size: 14px;
+    color: rgb(217, 217, 217);
+    font-weight: 900;
+    letter-spacing: 1.5px;
+}
+
+.home_svg {
+    margin-bottom: 15px;
+}
+
+.home {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 500;
+    color: white;
+}
+
+.home:hover {
+    color: rgb(184, 183, 183);
+}
+
+.home_icon {
+    display: inline-block;
+    margin-right: 20px;
+    padding-right: 10px;
+}
+
+.settings_svg {
+    margin-bottom: 15px;
+}
+
+.settings {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 500;
+    color: white;
+}
+
+.settings:hover {
+    color: rgb(184, 183, 183);
+}
+
+.settings_icon {
+    display: inline-block;
+    margin-right: 20px;
+    padding-right: 10px;
+}
+
+.log_out_svg {
+    margin-bottom: 15px;
+}
+
+.log_out {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 500;
+    color: white;
+}
+
+.log_out:hover {
+    color: rgb(184, 183, 183);
+}
+
+.log_out_icon {
+    display: inline-block;
+    margin-right: 17px;
+    padding-right: 9.6px;
+    padding-left: 3px;
+}
+
+.sub_information {
+    font-weight: 700;
+}
+
+.units_container {
+    font-size: 0;
+    height: 40px;
+}
+
+.units {
+    display: inline-block;
+    font-size: 12px;
+    padding: 0px 8px;
+}
+
+.imperial {
+    display: inline-block;
+    font-size: 14px;
+    height: 40px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: rgb(184, 183, 183);
+    background-color: #1b1b1b;
+    border: 1px solid #1b1b1b;
+}
+
+.metric {
+    display: inline-block;
+    font-size: 14px;
+    height: 40px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: rgb(184, 183, 183);
+    background-color: #1b1b1b;
+    border: 1px solid #1b1b1b;
+}
+
+.imperial:focus {
+    background-color: #101b29;
+    color: #bed3eb;
+}
+
+.metric:focus {
+    background-color: #101b29;
+    color: #bed3eb;
+}
+
+.help_logo_container {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    filter: invert(100%) sepia(85%) saturate(7%) hue-rotate(162deg) brightness(101%) contrast(101%);
+}
+
+.tools_main_container {
+    max-width: 300px;
+    position: relative;
+    top: 64px;
+}
+
+.tools_container {
+    background-color: #224063;
+}
+
+.info_container {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-left: 11px;
+    height: 72px;
+    background-color: #224063;
+    border: none;
+}
+
+.info_container:hover {
+    background-color: #213d5d;
+}
+
+.info_container:focus {
+    background-color: #182b40;
+}
+
+.info_logo_container {
+    padding: 0px 4.5px;
+}
+
+.info_logo {
+    display: block;
+    margin: auto;
+    height: 50%;
+    width: 50%;
+    filter: invert(71%) sepia(20%) saturate(7%) hue-rotate(314deg) brightness(97%) contrast(102%);
+}
+
+.info_text {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 7px 9.5px 0px 9.5px;
+    color: rgb(184, 183, 183);
+}
+
+.layers_container {
+    display: inline-block;
+    padding: 8px 14px;
+    margin-left: 0px;
+    height: 72px;
+    background-color: #224063;
+    border: none;
+}
+
+.layers_container:hover {
+    background-color: #213d5d;
+}
+
+.layers_container:focus {
+    background-color: #182b40;
+}
+
+.layers_logo_container {
+    padding: 0px 4.5px;
+}
+
+.layers_logo {
+    display: block;
+    margin: auto;
+    height: 50%;
+    width: 50%;
+    filter: invert(71%) sepia(20%) saturate(7%) hue-rotate(314deg) brightness(97%) contrast(102%);
+}
+
+.layers_text {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 5px 0px 0px 0px;
+    color: rgb(184, 183, 183);
+}
+
+.config_container {
+    display: inline-block;
+    padding: 8px 14px;
+    margin-left: 0px;
+    height: 72px;
+    margin-right: 11px;
+    background-color: #224063;
+    border: none;
+}
+
+.config_container:hover {
+    background-color: #213d5d;
+}
+
+.config_container:focus {
+    background-color: #182b40;
+}
+
+.config_logo_container {
+    padding: 0px 4.5px;
+}
+
+.config_logo {
+    display: block;
+    margin: auto;
+    height: 50%;
+    width: 50%;
+    filter: invert(71%) sepia(20%) saturate(7%) hue-rotate(314deg) brightness(97%) contrast(102%);
+}
+
+.config_text {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 5px 0px 0px 0px;
+    color: rgb(184, 183, 183);
+}
+
+.main_body_container {
+    position: relative;
+    top: -8px;
+    left: 300px;
+}
+
+.platform_data {
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    padding: 23px 12px 23px 24px;
+}
+
+.slash {
+    padding: 0px 5px;
+}
+
+.equipment_information_container {
+    background-color: black;
+}
+
+.equipment_information {
+    font-size: 14px;
+    padding: 16px;
+}
+
+.side_bar_main_container {
+    position: relative;
+    max-width: 300px;
+    top: -3px;
+}
+
+.equipment_information {
+    color: rgb(184, 183, 183);
+}
+
+.image_information_container {
+    background-color: black;
+}
+
+.image_name_container {
+    padding-top: 12px;
+    padding-left: 16px;
+}
+
+.image_name {
+    font-size: 16px;
+    color: white;
+}
+
+.spherical_number_container {
+    margin: 0px 16px;
+    max-width: 284px;
+    border-bottom: 1px solid rgb(184, 183, 183);
+}
+
+.spherical_number {
+    font-size: 14px;
+    color: rgb(184, 183, 183);
+}
+
+.equipment_name_container {
+    padding: 40px 24px 16px 24px;
+    background-color: black;
+}
+
+.equipment_name {
+    font-size: 14px;
+    color: #becfe2;
+    font-weight: 700;
+}
+
+.asset_name_container {
+    background-color: black;
+    padding: 0px 12px 12px 24px;
+}
+
+.asset_name {
+    max-width: 140px;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #2d2d2d;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-align: center;
+    background-color: #2d2d2d;
+    border-radius: 25px;
+}
+
+.circuit_name_container {
+    padding: 0px 24px 16px 24px;
+    background-color: black;
+}
+
+.circuit_name {
+    font-size: 14px;
+    color: #becfe2;
+    font-weight: 700;
+}
+
+.circuit_number_container {
+    background-color: black;
+    padding: 0px 12px 12px 24px;
+}
+
+.circuit_number {
+    max-width: 200px;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #2d2d2d;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #2d2d2d;
+    border-radius: 25px;
+}
+
+.area_details_container {
+    padding: 35px 24px 7px 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.area_container {
+    display: inline-block;
+}
+
+.area {
+    font-size: 14px;
+    color: #becfe2;
+    font-weight: 700;
+}
+
+.area_actual_container {
+    display: inline-block;
+}
+
+.area_actual {
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
+
+.equipment_class_container {
+    padding: 7px 24px 7px 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.equipment_class {
+    display: inline-block;
+}
+
+.equipment_class_text {
+    font-size: 14px;
+    color: #becfe2;
+    font-weight: 700;
+}
+
+.pipe_container {
+    display: inline-block;
+}
+
+.pipe {
+    font-size: 14px;
+    color: #becfe2;
+    font-weight: 700;
+}
+
+.equipment_size_container {
+    padding: 7px 24px 7px 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.equipment_size {
+    display: inline-block;
+}
+
+.equipment_size_text {
+    font-size: 14px;
+    color: #becfe2;
+    font-weight: 700;
+}
+
+.size_container {
+    display: inline-block;
+}
+
+.size {
+    font-size: 14px;
+    color: #becfe2;
+    font-weight: 700;
+}
+
+.equipment_service_class_container {
+    padding: 7px 24px 7px 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.equipment_service_class {
+    display: inline-block;
+}
+
+.equipment_service_class_text {
+    font-size: 14px;
+    color: #becfe2;
+    font-weight: 700;
+}
+
+.service_value {
+    display: inline-block;
+}
+
+.value {
+    font-size: 14px;
+    color: #becfe2;
+    font-weight: 700;
+}
+
+.remediated_main_container {
+    padding: 7px 24px 7px 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.remediated_container {
+    display: inline-block;
+}
+
+.remediated {
+    font-size: 14px;
+    color: #becfe2;
+    font-weight: 700;
+}
+
+.remediated_value {
+    display: inline-block;
+}
+
+.r_value {
+    font-size: 14px;
+    color: #becfe2;
+    font-weight: 700;
+}
+
+.corrosion_container {
+    background-color: black;
+    padding: 32px 24px 14px 24px;
+}
+
+.corrosion {
+    font-size: 14px;
+    color: #becfe2;
+    font-weight: 700;
+}
+
+.corrosion_value_container {
+    background-color: black;
+    padding: 0px 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.light {
+    font-size: 16px;
+    color: #6f89B1;
+}
+
+.l_c_value {
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+}
+
+.moderate {
+    font-size: 16px;
+    color: #6f89B1;
+}
+
+.m_c_value {
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+}
+
+.heavy {
+    font-size: 16px;
+    color: #6f89B1;
+}
+
+.h_c_value {
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+}
+
+.substrate_condition {
+    font-size: 16px;
+    color: #6f89B1;
+}
+
+.s_c_value {
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+}
+
+.degree_of_rusting_container {
+    background-color: black;
+    padding: 32px 24px 14px 24px;
+}
+
+.degree_of_rusting {
+    font-size: 14px;
+    color: #becfe2;
+    font-weight: 700;
+}
+
+.degree_of_rusting_value_container {
+    background-color: black;
+    padding: 0px 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.r_i_0 {
+    font-size: 16px;
+    color: #6f89B1;
+}
+
+.r_i_0_value {
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+}
+
+.r_i_1 {
+    font-size: 16px;
+    color: #6f89B1;
+}
+
+.r_i_1_value {
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+}
+
+.r_i_2 {
+    font-size: 16px;
+    color: #6f89B1;
+}
+
+.r_i_2_value {
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+}
+
+.r_i_3 {
+    font-size: 16px;
+    color: #6f89B1;
+}
+
+.r_i_3_value {
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+}
+
+.r_i_4 {
+    font-size: 16px;
+    color: #6f89B1;
+}
+
+.r_i_4_value {
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+}
+
+.r_i_5 {
+    font-size: 16px;
+    color: #6f89B1;
+}
+
+.r_i_5_value {
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+}
+
+.consolidated_degree_of_rusting_container {
+    background-color: black;
+    padding: 32px 24px 14px 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.consolidated_degree_of_rusting_text {
+    font-size: 14px;
+    color: #becfe2;
+    font-weight: 700;
+}
+
+.c_d_0_r_value {
+    font-size: 14px;
+    color: #becfe2;
+    text-align: end;
+}
+
+.assembly_condition_container {
+    background-color: black;
+    padding: 18px 24px 22px 24px;
+}
+
+.assembly_condition {
+    font-size: 15px;
+    color: white;
+}
+
+.button_stacker_main_container {
+    background-color: black;
+}
+
+.images_tally_button_container {
+    display: flex;
+    justify-content: center;
+    padding: 5px 24px;
+}
+
+.images_tally_button {
+    width: 100%;
+    background-color: #2d2d2d;
+    border-radius: 4px;
+    border: 1px solid #2d2d2d;
+    padding: 5px;
+}
+
+.tally_number {
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+.export_data_button_container {
+    display: flex;
+    justify-content: center;
+    padding: 0px 24px 5px 24px;
+}
+
+.export_data_button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #2d2d2d;
+    border-radius: 4px;
+    border: 1px solid #2d2d2d;
+    padding: 5px;
+}
+
+.export_data {
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    padding-top: 3px;
+}
+
+.export_data_logo {
+    margin-right: 5px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(351deg) brightness(106%) contrast(106%);
+}
+
+.copy_link_button_container {
+    display: flex;
+    justify-content: center;
+    padding: 0px 24px 5px 24px;
+}
+
+.copy_link_button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #2d2d2d;
+    border-radius: 4px;
+    border: 1px solid #2d2d2d;
+    padding: 5px;
+}
+
+.copy_link {
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    padding-top: 3px;
+}
+
+.copy_link_logo {
+    margin-right: 5px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(351deg) brightness(106%) contrast(106%);
+}
+
+.add_part_button_container {
+    display: flex;
+    justify-content: center;
+    padding: 0px 24px 5px 24px;
+}
+
+.add_part_button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #2d2d2d;
+    border-radius: 4px;
+    border: 1px solid #2d2d2d;
+    padding: 5px;
+}
+
+.add_part {
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    padding-top: 3px;
+}
+
+.add_part_logo {
+    margin-right: 5px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(351deg) brightness(106%) contrast(106%);
+}
+
+.show_in_equipment_table_button_container {
+    display: flex;
+    justify-content: center;
+    padding: 0px 24px 5px 24px;
+}
+
+.show_in_equipment_table_button {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    background-color: #2d2d2d;
+    border-radius: 4px;
+    border: 1px solid #2d2d2d;
+    padding: 5px;
+}
+
+.show_in_equipment_table {
+    width: fit-content;
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1.35px;
+    padding-top: 4px;
+    text-align: start;
+}
+
+.show_in_equipment_table_logo {
+    margin-right: 5px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(351deg) brightness(106%) contrast(106%);
+}
+
+.show_in_3d_view_button_container {
+    display: flex;
+    justify-content: center;
+    padding: 0px 24px 5px 24px;
+}
+
+.show_in_3d_view_button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #2d2d2d;
+    border-radius: 4px;
+    border: 1px solid #2d2d2d;
+    padding: 5px;
+}
+
+.show_in_3d_view {
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    padding-top: 3px;
+}
+
+.show_in_3d_view_logo {
+    margin-right: 5px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(351deg) brightness(106%) contrast(106%);
+}
+
+.return_to_dashboard_button_container {
+    display: flex;
+    justify-content: center;
+    padding: 0px 24px 5px 24px;
+}
+
+.return_to_dashboard_button {
+    width: 100%;
+    background-color: #2d2d2d;
+    border-radius: 4px;
+    border: 1px solid #2d2d2d;
+    padding: 5px;
+}
+
+.return_to_dashboard {
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+.review_part_button_container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 24px 5px 24px;
+}
+
+.review_part_button {
+    width: 100%;
+    background-color: #2d2d2d;
+    border-radius: 4px;
+    border: 1px solid #2d2d2d;
+    padding: 5px;
+}
+
+.review_part {
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+.spacing_1 {
+    padding: 24px;
+}
+
+.spacing_2 {
+    padding: 24px;
+}
+
+.main_footer_container {
+    display: flex;
+    padding: 6px 16px;
+    background-color: #224063;
+}
+
+.copyright_logo_container {
+    display: inline-flex;
+    padding-right: 5px;
+}
+
+.copyright_logo {
+    margin-bottom: 1px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(351deg) brightness(106%) contrast(106%);
+}
+
+.brand_display_container {
+    display: inline-flex;
+    flex-grow: 1;
+}
+
+.brand_display {
+    font-size: 16px;
+    color: white;
+}
+
+.help_logo_2_container {
+    display: inline-flex;
+}
+
+.help_logo_2 {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(351deg) brightness(106%) contrast(106%);
+}
+
+.images_tally_button:hover {
+    background-color: #212121;
+}
+
+.export_data_button:hover {
+    background-color: #212121;
+}
+
+.copy_link_button:hover {
+    background-color: #212121;
+}
+
+.add_part_button:hover {
+    background-color: #212121;
+}
+
+.show_in_equipment_table_button:hover {
+    background-color: #212121;
+}
+
+.show_in_3d_view_button:hover {
+    background-color: #212121;
+}
+
+.return_to_dashboard_button:hover {
+    background-color: #212121;
+}
+
+.review_part_button:hover {
+    background-color: #212121;
+}
